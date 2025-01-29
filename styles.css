@@ -244,28 +244,52 @@
 }
 
 
-
-.TWF-btn {
-    height: 63px;
-    width: 219px;
-    border-radius: 8px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 23px;
-    border: none;
-    column-gap: 10px;
-    color: white;
-    background-color: #4F9CF9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .section2-1-2 {
     height: 549px;
     width: 55.67%;
     background-color: #C4DEFD;
 }
+
+
+
+.section3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    column-gap: 100px;
+    padding-top: 100px;
+
+}
+
+.WTImg{
+    width: 48%;
+  }
+
+.section3-1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    width: 45.27%;
+}
+
+.section3-head{
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 87.14px;
+    margin: 0px;
+    position: relative;
+}
+
+.section3-content{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    margin: 0px;
+    height: fit-content;
+}
+
 
 
 
@@ -302,6 +326,16 @@
     .section2-1-2 {
         height: 456.39px;
         width: 47.57%;
+    }
+
+    .section3{
+        column-gap: 160px;
+    }
+    .section3-1{
+     width: 46%;
+    }
+    .WTImg{
+        width: 42.36%;
     }
 }
 
@@ -449,6 +483,40 @@
         aspect-ratio: 551 / 367;
         box-sizing: border-box;
     }
+
+
+    .section3{
+        flex-direction: column-reverse;
+        row-gap: 100px;
+        column-gap: 0px;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .section3-1{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .section3-1-container{
+        align-items: center;
+        text-align: center;
+    }
+    .section3-head{
+        font-size: 54px;
+        line-height: 65.35px;
+        padding: 0px 12px;
+        text-align: center;
+    }
+
+    .section3-content {
+        text-align: center;
+    }
+
+    .WTImg{
+        width: 62.36%;;
+    }
 }
 
 
@@ -536,5 +604,20 @@
     .section2-1-2 {
         width: 100%;
         aspect-ratio: 288 / 191;
+    }
+
+    .section3-1{
+        height: fit-content; 
+    }
+    .section3-1-container{
+        height: fit-content; 
+    }
+    .section3-head{
+    font-size: 36px;
+    line-height: 43.57px;
+    }
+
+    .sub32{
+        width: 100%;
     }
 }
