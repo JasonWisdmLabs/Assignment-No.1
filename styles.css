@@ -35,11 +35,11 @@ body {
     height: auto;
 }
 
-.color1{
+.color1 {
     color: #4F9CF9;
 }
 
-.color2{
+.color2 {
     color: #FFE492;
 }
 
@@ -200,6 +200,8 @@ body {
 }
 
 .section2-heading {
+    position: relative;
+    display: inline-block;
     font-weight: 700;
     font-size: 64px;
     line-height: 77.45px;
@@ -221,7 +223,14 @@ body {
     background-color: #C4DEFD;
 }
 
-
+.BG1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    height: auto; 
+    z-index: -1;
+}
 
 .section3 {
     width: 100%;
@@ -246,6 +255,7 @@ body {
     line-height: 87.14px;
     margin: 0px;
     position: relative;
+    display: inline-block;
 }
 
 .section3-content {
@@ -280,10 +290,33 @@ body {
 }
 
 .section4-heading {
+    position: relative;
+    display: inline-block;
     font-weight: 700;
     font-size: 64px;
     line-height: 77.45px;
     margin: 0px;
+}
+
+.BG4 {
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    width: 100%; 
+    height: auto; 
+    z-index: -1;
+}
+
+.section4-heading .underline-needs {
+    position: relative;
+}
+
+.section4-heading .underline-needs .BG4 {
+    left: 0;
+}
+
+.underline-your-needs{
+    display: none;
 }
 
 .section4-content {
@@ -324,12 +357,23 @@ body {
 }
 
 .section5-heading {
+    position: relative;
+    display: inline-block;
     font-weight: 700;
     font-size: 72px;
     line-height: 87.14px;
     margin: 0px;
-    position: relative;
 }
+.BG5 {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%; 
+    height: auto; 
+    z-index: -1; 
+}
+
+
 
 .section5-content {
     font-weight: 400;
@@ -339,6 +383,7 @@ body {
     height: fit-content;
     width: 979px;
 }
+
 
 .section5-cards {
     width: 100%;
@@ -356,7 +401,6 @@ body {
     border: 1px solid #FFE492;
     padding: 40px 44px;
     color: #212529;
-    box-sizing: border-box;
     width: 31.89%;
 }
 
@@ -462,6 +506,17 @@ li {
     line-height: 87.14px;
     letter-spacing: -2%;
     height: fit-content;
+    display: inline-block;
+    z-index: 4;
+}
+
+.BG2 {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%; 
+    height: auto; 
+    z-index: 1; 
 }
 
 .section6-content {
@@ -473,6 +528,13 @@ li {
     height: fit-content;
     letter-spacing: -2%;
     width: 1064px;
+}
+.Background-Image6{
+    position: absolute;
+    z-index: 0;
+    right: 74%;
+    bottom: -15%;
+    opacity: 0.5;
 }
 
 .TT-btn {
@@ -874,6 +936,101 @@ li {
 }
 
 
+.underline {
+    position: relative;
+    display: inline-block;
+}
+
+.underline img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    height: auto;
+    z-index: -1;
+}
+
+
+.underline-management img {
+    width: 105%; 
+}
+
+.underline-together img {
+    width: 100%; 
+}
+
+.underline-customise img {
+    width: 100%; 
+}
+
+
+
+.plan-radio {
+    display: none;
+}
+
+.section5-cards {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+#plan1:checked ~ .section5-cards,
+
+
+#plan2:checked ~ .section5-cards,
+
+
+
+#plan3:checked ~ .section5-cards,
+
+
+.underline-your-data img {
+    width: 100%;
+}
+
+
+.underline-sponsors img {
+    width: 100%;
+}
+
+.underline-trusted img {
+    width: 100%;
+}
+
+
+.underline-plan img {
+    width: 100%;
+}
+
+.underline-you-are img {
+    width: 100%;
+}
+
+.horizontal-bullets li, .horizontal-bullets2 li {
+    width: 12px;
+    height: 12px;
+    background-color: #4F9CF9;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.horizontal-bullets li label, .horizontal-bullets2 li label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+.underline-plan img {
+    width: 100%;
+}
+
+
 @media screen and (max-width: 1440px) {
     .nav-header {
         padding: 16px 32px;
@@ -934,6 +1091,14 @@ li {
         width: 47.63%;
     }
 
+    .section4-heading .underline-your-needs {
+        position: relative;
+    }
+
+    .section4-heading .underline-your-needs .BG4 {
+        left: 0;
+    }
+
     .section5 {
         padding: 140px 32px;
     }
@@ -976,6 +1141,9 @@ li {
 
     .footer {
         padding: 140px 32px 32px 32px;
+    }
+    .underline-customise img {
+        width: 120%; 
     }
 
 }
@@ -1041,6 +1209,14 @@ li {
         width: 39.84%;
     }
 
+    .section4-heading .underline-needs {
+        position: relative;
+    }
+
+    .section4-heading .underline-needs .BG4 {
+        left: 0;
+    }
+
     .section5-heading {
         font-size: 64px;
         line-height: 77.45px;
@@ -1057,6 +1233,9 @@ li {
     .section6 {
         justify-content: left;
         text-align: left;
+    }
+    .Background-Image6{
+        display: none;
     }
 
     .section6-1 {
@@ -1151,6 +1330,10 @@ li {
     .footer-section {
         padding: 140px 2.77% 32px 2.77%;
     }
+
+    .underline-customise img {
+        width: 100%; 
+    }
 }
 
 
@@ -1208,7 +1391,6 @@ li {
         width: 75.68%;
         height: auto;
         aspect-ratio: 551 / 367;
-        box-sizing: border-box;
     }
 
 
@@ -1243,7 +1425,6 @@ li {
         width: 75.68%;
         height: auto;
         aspect-ratio: 551 / 367;
-        box-sizing: border-box;
     }
 
 
@@ -1317,8 +1498,17 @@ li {
         width: 72.52%;
         height: auto;
         aspect-ratio: 557 / 388.93;
-        box-sizing: border-box;
     }
+
+    .section4-heading .underline-your-needs {
+        position: relative;
+    }
+
+    .section4-heading .underline-your-needs .BG4 {
+        left: 0;
+    }
+
+
 
     .section5 {
         padding: 140px 0px;
@@ -1485,7 +1675,7 @@ li {
     }
 
     .Apps-Img {
-        width: 66.62087912%;
+        width: 66.62%;
         aspect-ratio: 485 / 392.33;
         flex: none;
     }
@@ -1521,24 +1711,25 @@ li {
     }
 
 
-    .horizontal-bullets2 {
+    .horizontal-bullets {
         display: flex;
         justify-content: center;
         gap: 12px;
         list-style: none;
-        padding-bottom: 100px;
+        padding-bottom: 100px; 
     }
-
-    .horizontal-bullets2 li {
+    
+    .horizontal-bullets li {
         width: 12px;
         height: 12px;
-        background-color: #4F9CF9;
+        background-color: #4F9CF9; 
         border-radius: 50%;
     }
-
-    .horizontal-bullets2 li.highlighted-bullet2 {
-        background-color: #043873;
+    
+    .horizontal-bullets li.highlighted-bullet {
+        background-color: #043873; 
     }
+    
 
     .footer-container {
         row-gap: 100px;
@@ -1591,6 +1782,13 @@ li {
 
     .footer-btns {
         width: 28.55%;
+    }
+
+    .underline-customise img {
+        width: 120%; 
+    }
+    .underline-plan img {
+        width: 120%; 
     }
 
 }
@@ -1709,6 +1907,16 @@ li {
         width: 100%;
         aspect-ratio: 284 / 198;
     }
+
+    .section4-heading .underline-needs {
+        position: relative;
+    }
+
+    .section4-heading .underline-needs .BG1 {
+        left: 0;
+    }
+
+
 
     .section5-heading {
         font-size: 36px;
@@ -1850,19 +2058,33 @@ li {
         padding: 140px 16px 32px 16px;
     }
 
-    
+
     .footer-top {
         row-gap: 80px;
     }
+
     .footer-container {
         row-gap: 80px;
     }
 
     .footer-info {
         display: flex;
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
         row-gap: 20px;
+    }
+
+    .footer-btns {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .footer-btns-description {
+        text-align: center;
+        width: 100%;
     }
 
     .footer-btn {
@@ -1870,4 +2092,51 @@ li {
         font-size: 18px;
         line-height: 30px;
     }
+
+    .section10-heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; 
+    }
+
+    
+    #UT1 img {
+        display: none;
+    }
+
+    #UT2 {
+        display: block;
+        width: 60%; 
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    #UT2 img {
+        width: 100%; 
+        position: relative;
+        display: block;
+        margin: 0 auto; 
+    }
+
+    .underline-customise img {
+        width: 100%; 
+    }
+
+    .underline-plan img {
+        width: 100%;
+    }
+
+    .underline-you-are img {
+        width: 120%; 
+    }
 }
+
+
+
+
+
+
+
+
+
